@@ -1,0 +1,165 @@
+<div class="container">
+  <div class="row mt-5 mb-3">
+    <div class="col-6 offset-3">
+      <div class="card border-primary">
+        <div class="card-header text-center text-info text-uppercase">
+          Sign Up Please
+        </div>
+
+        <div class="card-body">
+          <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div>
+              <!-- image picker -->
+              <div class="text-center mb-4 d-flex flex-column" style="cursor:pointer;">
+                <label for="imagepicker" class="">
+                  <img
+                    src="../../../assets/plus.png"
+                    width="20%"
+                    height="50%"
+                    alt=""
+                    class="profile"
+                  />
+                  <div class="mt-2">
+                    Add Profile Photo
+                  </div>
+                </label>
+
+                <input
+                  type="file"
+                  name="image"
+                  id="imagepicker"
+                  accept="image/*"
+                  multiple="{false}"
+                  class="hidden"
+                  hidden
+                  (change)="uploadFile($event)"
+                />
+              </div>
+
+              <div
+                [hidden]="!uploadPercent || uploadPercent == 100"
+                class="text-white text-center"
+              >
+                uploading
+                {{ uploadPercent | number: "1.0-0" }} % of 100%
+              </div>
+              <div
+                *ngIf="uploadPercent == 100"
+                class="text-success text-uppercase text-center mb-3"
+              >
+                Upload finished
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="name" class="col-sm-3 col-form-label">Name <span style="color: red;">*</span></label>
+              <div class="col-sm-9">
+                <input
+                  type="name"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Enter Name"
+                  required
+                  ngModel
+                />
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="email" class="col-sm-3 col-form-label">Email <span style="color: red;">*</span></label>
+              <div class="col-sm-9">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter Email"
+                  required
+                  ngModel
+                />
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="password" class="col-sm-3 col-form-label"
+                >Password <span style="color: red;">*</span></label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  placeholder="Enter password"
+                  required
+                  ngModel
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >Minimum length of the password should be 6 or more</small
+                >
+              </div>
+            </div>
+
+            <div class="form-group row mb-2">
+              <label for="email" class="col-sm-3 col-form-label"
+                >Instagram username <span style="color: red;">*</span></label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  name="username"
+                  placeholder="Enter your handle of instagram"
+                  required
+                  ngModel
+                />
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="email" class="col-sm-3 col-form-label">Country <span style="color: red;">*</span></label>
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="country"
+                  name="country"
+                  placeholder="Your Country"
+                  required
+                  ngModel
+                />
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="email" class="col-sm-3 col-form-label">Bio <span style="color: red;">*</span></label>
+              <div class="col-sm-9">
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="bio"
+                  name="bio"
+                  placeholder="some bio about you"
+                  required
+                  ngModel
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <button
+                [disabled]="!f.form.valid"
+                class="btn btn-primary"
+                type="submit"
+              >
+                Sign Up
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

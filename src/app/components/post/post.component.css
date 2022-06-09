@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand|Lato:400,400i,700,700i|Montserrat+Alternates:400,400i,700,700i|Montserrat:400,400i,700,700i|Permanent+Marker|Shadows+Into+Light|Rock+Salt');
+
+/* body { background-color: #101010; } */
+.clear {
+  clear: both;
+}
+
+.instagram-template {
+  position: relative;
+  width: 550px;
+  height: auto;
+  padding-bottom: 60px;
+  background-color: #f9f9f9;
+  margin: 0 auto;
+  cursor: default;
+}
+
+.instagram-inner {
+  position: relative;
+  margin: 20px;
+}
+
+.instagram-top {
+  position: relative;
+  height: 160px;
+  padding: 20px 0px;
+}
+
+.instagram-avatar {
+  position: absolute;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  top: 30px;
+  left: 10px;
+}
+
+.instagram-avatar img {
+  max-height: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  min-width: 100px;
+  overflow: hidden;
+}
+
+.instagram-name {
+  position: relative;
+  left: 140px;
+  top: 10px;
+  font-family: montserrat;
+  font-weight: lighter;
+  font-size: 28px;
+  color: #aeaeae;
+}
+
+.instagram-numbers {
+  position: absolute;
+  left: 116px;
+  top: 58px;
+}
+
+.instagram-numbers div {
+  position: relative;
+  display: inline-block;
+  min-width: 120px;
+  text-align: center;
+  font-family: montserrat alternates;
+  font-size: 12px;
+  color: #505050;
+}
+
+.instagram-numbers div span {
+  color: #aeaeae;
+}
+
+.instagram-desc {
+  position: absolute;
+  height: 55px;
+  width: 300px;
+  overflow: hidden;
+  padding: 8px;
+  background: #ffffff;
+  top: 80px;
+  left: 144px;
+}
+
+.instagram-desc div {
+  padding: 5px;
+  text-align: justify;
+  font-family: montserrat;
+  font-size: 9px;
+  color: #909090;
+}
+
+.instagram-desc div b {
+  color: #e1cbcf;
+  font-size: 10px;
+}
+
+.instagram-body {
+  position: relative;
+  margin: 20px auto;
+  width: 370px;
+}
+
+.instagram-images {
+  position: relative;
+  height: 370px;
+  width: 370px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.instagram-images img {
+  max-width: 120px;
+  min-width: 120px;
+  max-height: 120px;
+  min-height: 120px;
+  overflow: hidden;
+}
+
+
+
+.instagram-post {
+  position: relative;
+  height: 100%;
+  width: 440px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  overflow: hidden;
+  cursor: default;
+}
+
+.instagram-post-top {
+  position: relative;
+  height: 55px;
+  overflow: hidden;
+}
+
+.instagram-post-avatar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.instagram-post-avatar img {
+  height: 100%;
+  width: 100%;
+}
+
+.instagram-post-name {
+  position: absolute;
+  top: 16px;
+  left: 58px;
+  font-family: montserrat alternates;
+  /* text-transform: lowercase; */
+  font-weight: bold;
+  color: black;
+  font-size: 13px;
+}
+
+.instagram-post-title {
+  position: absolute;
+  left: 59px;
+  top: 34px;
+  font-family: montserrat;
+  text-transform: normal;
+  font-size: 10px;
+}
+
+.instagram-post-date {
+  position: absolute;
+  right: 56px;
+  top: 25px;
+  font-family: montserrat alternates;
+  font-size: 9px;
+  font-weight: bold;
+  color: #9c9999;
+}
+
+.instagram-post-bookmark {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  font-size: 24px;
+  color: #cecece;
+}
+
+.instagram-post-image {
+  position: relative;
+}
+.instagram-post-image img {
+  max-width: 440px;
+  min-width: 440px;
+  max-height: 370px;
+  min-height: 370px;
+  overflow: hidden;
+}
+.instagram-post-bottom {
+  /* position: relative; */
+}
+
+.instagram-post-desc {
+  position: relative;
+  /* width: 350px;
+  height: 50px; */
+  margin: 0 auto 0 auto;
+  /* border-bottom: 1px solid #dedede; */
+  overflow: hidden;
+}
+
+.instagram-post-desc div {
+  position: relative;
+  font-family: montserrat;
+  font-size: 11px;
+  color: #3b3b3b;
+}
+
+.instagram-post-desc div small {
+  display: inline-block;
+  margin-right: 3px;
+  font-family: montserrat alternates;
+  font-size: 13px;
+  font-weight: bold;
+  color: #2775f4;
+}
+
+.instagram-post-desc div i {
+  color: #e1cbcf;
+}
+
+.instagram-post-icons {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 44px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.instagram-post-icons span {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 20px;
+  color: #cecece;
+}
+
+.instagram-post-likes {
+  position: absolute;
+  right: 50px;
+  margin-top: 13px;
+  text-align: right;
+  font-family: montserrat alternates;
+  font-size: 12px;
+  font-weight: bold;
+  color: #aeaeae;
+}
+
+.instagram-post-likes span {
+  color: #e1cbcf;
+}
+
+.instagram-post-comment {
+  position: relative;
+  width: 350px;
+  height: 20px;
+  padding-top: 18px;
+  margin: 40px auto 0 auto;
+  border-top: 1px solid #dedede;
+}
+
+.instagram-post-comment div {
+  font-family: montserrat;
+  font-size: 12px;
+  color: #909090;
+}
+
+.instagram-post-comment div span {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  margin-top: -10px;
+  font-size: 30px;
+}

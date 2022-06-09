@@ -1,0 +1,97 @@
+<div class="card mb-3 border-secondary">
+  <div class="card-header">
+    <div class="instagram-post-top">
+      <div class="instagram-post-avatar">
+        <img src="../../../assets/programmer.png">
+      </div>
+      <div class="instagram-post-name">
+        {{ post.by }}
+      </div>
+      <div class="instagram-post-title">
+        {{ post.locationName }}
+      </div>
+      <div class="instagram-post-date">
+        {{ post.date | date }}
+      </div>
+      <div class="instagram-post-bookmark">
+        <span class="th th-bookmark-1-o"></span>
+      </div>
+    </div>
+  </div>
+  <a href="#" target="_blank">
+    <img [src]="post.picture" height="500" width="auto" class="card-img-top img-fluid" />
+  </a>
+  <div class="card-body">
+    <div class="instagram-post-desc">
+      <div>
+        <small>{{ post.by }}</small> {{ post.description }}
+      </div>
+    </div>
+  </div>
+  <div class="card-footer bg-transparent border-secondary d-flex justify-content-around align-content-center">
+    <div (click)="upvotePost()" class="text-primary d-flex align-items-center gap-2">
+      <img src="../../../assets/thumbs-up.png" width="30" height="30" class="d-inline-block align-top" alt="" />
+      {{ upvote }}
+    </div>
+    <div (click)="downvotePost()" class="text-secondary d-flex align-items-center gap-2">
+      <img src="../../../assets/dislike.png" width="30" height="30" class="d-inline-block align-top" alt="" />
+      {{ downvote }}
+    </div>
+    <a [href]="getInstaUrl()" target="_blank" class="text-primary d-flex align-items-center gap-2">
+      <img src="../../../assets/chat.png" width="30" height="30" class="d-inline-block align-top" alt="" />
+    </a>
+  </div>
+</div>
+
+
+<!-- <div class="card">
+  <div class="instagram-post border-secondary">
+    <div class="instagram-post-top">
+      <div class="instagram-post-avatar">
+        <img src="../../../assets/programmer.png">
+      </div>
+      <div class="instagram-post-name">
+        {{ post.by }}
+      </div>
+      <div class="instagram-post-title">
+        {{ post.locationName }}
+      </div>
+      <div class="instagram-post-date">
+        Sept 1
+      </div>
+      <div class="instagram-post-bookmark">
+        <span class="th th-bookmark-1-o"></span>
+      </div>
+    </div>
+    <div class="instagram-post-image">
+      <img [src]="post.picture" height="500" width="auto" class="card-img-top img-fluid" />
+    </div>
+    <div class="instagram-post-bottom">
+      <div class="instagram-post-desc">
+        <div>
+          <small>{{ post.by }}</small> {{ post.description }}<i>#hashtags
+            #forflare</i>
+        </div>
+      </div>
+      <div class="instagram-post-icons">
+        <span class="th th-heart-1-o"></span>
+        <span class="th th-chat-bubble-o"></span>
+        <span class="th th-share-o"></span>
+      </div>
+      <div class="instagram-post-likes">
+        <div (click)="upvotePost()" class="text-primary">
+          {{ upvote }}
+        </div>
+        <div (click)="downvotePost()" class="text-secondary">
+          {{ downvote }}
+        </div>
+
+      </div>
+      <div class="instagram-post-comment">
+        <a [href]="getInstaUrl()" target="_blank" class="text-primary">
+          link </a>
+      </div>
+    </div>
+  </div>
+
+</div> -->
